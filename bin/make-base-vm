@@ -108,7 +108,8 @@ if [ $DOCKER = "1" ]; then
 else
   MIRROR_DEFAULT=127.0.0.1
 fi
-MIRROR_BASE=http://${MIRROR_HOST:-$MIRROR_DEFAULT}:3142
+#MIRROR_BASE=http://${MIRROR_HOST:-$MIRROR_DEFAULT}:3142
+MIRROR_BASE=http://135.245.192.7:8000
 
 if [ $DISTRO = "ubuntu" ]; then
   MIRROR=$MIRROR_BASE/archive.ubuntu.com/ubuntu
